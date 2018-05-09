@@ -1,0 +1,218 @@
+/* Import Google Fonts ================= 
+   font-family: 'Julius Sans One', sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
+================= ================= */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Source+Sans+Pro');
+
+/* GENERAL STYLES ================= */
+body {
+  background: #fff;
+  color: #222222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#page-one {
+  padding: 15px;
+  max-width: 1000px;
+  flex: 1 1 90%;
+}
+
+#page-two {
+  padding: 15px;
+  max-width: 1000px;
+  flex: 1 1 90%;
+}
+
+/* STRUCTURE ============================== */
+.titles {
+  font-family: 'Julius Sans One';
+  font-size: 18px;
+  padding 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.titles-main {
+  font-family: 'Julius Sans One';
+  font-size: 22px;
+  padding 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.inside-chart {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .95rem;
+  line-height: 1.2;
+  margin-bottom: 1px;
+  padding: 5px;
+}
+
+.pageonecontent {
+  display: grid;
+  grid-template-rows: repeat(13);
+  grid-template-columns: repeat(17, 1fr);
+  grid-gap: 20px;
+}
+
+.pageonecontent-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageonecontent-item.logo {
+  grid-row: span 3;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.playbox {
+  grid-row: span 3;
+  grid-column: span 9;
+}
+
+.pageonecontent-item.xpbox {
+  grid-row: span 3;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.attributes {
+  grid-row: span 4;
+  grid-column: span 7;
+}
+
+.pageonecontent-item.characteristics {
+  grid-row: span 4;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.origins {
+  grid-row: span 5;
+  grid-column: span 6;
+}
+
+.pageonecontent-item.profile {
+  grid-row: span 5;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.abilities {
+  grid-row: span 2;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.resistances {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.pageonecontent-item.skills {
+  grid-row: span 3;
+  grid-column: span 6;
+}
+
+.pageonecontent-item.conditioning {
+  grid-row: span 2;
+  grid-column: span 4;
+}
+
+.pageonecontent-item.palestone {
+  grid-row: span 5;
+  grid-column: span 7;
+}
+
+.pageonecontent-item.proficiencies {
+  grid-row: span 3;
+  grid-column: span 6;
+}
+
+.pagetwocontent {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(22, 1fr);
+  grid-template-columns: repeat(17, 1fr);
+  grid-gap: 20px;
+}
+
+.pagetwocontent-item.outfit {
+  grid-row: span 7;
+  grid-column: span 6;
+}
+
+.pagetwocontent-item.readiness {
+  grid-row: span 4;
+  grid-column: span 6;
+}
+
+.pagetwocontent-item.holdings {
+  grid-row: span 7;
+  grid-column: span 5;
+}
+
+.pagetwocontent-item.alteredstates {
+  grid-row: span 3;
+  grid-column: span 6;
+}
+
+.pagetwocontent-item.inventory {
+  grid-row: span 15;
+  grid-column: span 5;
+}
+
+.pagetwocontent-item.actions {
+  grid-row: span 9;
+  grid-column: span 12;
+}
+
+.pagetwocontent-item.mastery {
+  grid-row: span 6;
+  grid-column: span 5;
+}
+
+.pagetwocontent-item.status {
+  grid-row: span 6;
+  grid-column: span 7;
+}
+/* INPUT AREA FORMATTING ========= */
+
+/*.form-row {
+  margin-bottom: 0px;
+  padding: 8px 0;
+  line-height: 1.5;
+  display: flex;
+}
+
+.form-row input {
+  flex: 1;
+}*/
+
+input[type="number"]{
+  width: 90%;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 4px;
+  border: none;
+}
+
+input[type="text"]{
+  width: 90%;
+  line-height: 2.1;
+  margin-left: 2px;
+  border: none;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    resize: none;
+}
