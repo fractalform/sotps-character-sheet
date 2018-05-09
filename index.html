@@ -6,14 +6,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Source+Sans+Pro:300,400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<h1>Song of the Pale Stone Character Generator</h1>
-		</header>
-<div id="page-one"> 
+<div class="page-one"> 
   <div class="pageonecontent">
     <div class="pageonecontent-item logo">
-      <img src="https://raw.githubusercontent.com/fractalform/sotps-hireling-generator/master/images/AL_Logo.png">
+      <img src="https://raw.githubusercontent.com/fractalform/sotps-hireling-generator/master/images/AL_Logo.png" height="100%" width="100%"">
     </div>
     <div class="pageonecontent-item playbox">
       <table width="100%" height="100%" border="1">
@@ -23,15 +19,15 @@
           </tr>
           <tr>
             <td width="35%" height="20%">&nbsp;Player Name:</td>
-            <td width="65%" height="20%"><input type="text" id="playname" placeholder="Enter Your Name"></td>
+            <td width="65%" height="20%"><input type="text" name="attr_Player_Name" placeholder="Enter Your Name"></td>
           </tr>
           <tr>
             <td height="20%">&nbsp;Campaign Title:</td>
-            <td><input type="text" id="campaign" placeholder="Enter Campaign Title"></td>
+            <td><input type="text" name="attr_Campaign_Title" placeholder="Enter Campaign Title"></td>
           </tr>
           <tr>
             <td height="20%">&nbsp;Character Name:</td>
-            <td><input type="text" id="charname" placeholder="Enter Your Character's Name"></td>
+            <td><input type="text" name="attr_Character_Name" placeholder="Enter Your Character's Name"></td>
           </tr>
         </tbody>
       </table>
@@ -40,14 +36,14 @@
       <table width="100%" height="100%" border="1">
         <tbody>
           <tr>
-            <td valign="top" colspan="2"><div class="inside-chart">Character's Current Location:</div><input type="text" id="charname" placeholder="Character's Current Location:"></td>
+            <td valign="top" colspan="2"><div class="inside-chart">Character's Current Location:</div><input type="text" name="attr_Current_Location" placeholder="Character's Current Location:"></td>
           </tr>
           <tr>
-            <td valign="top" width="35%" rowspan="2"><div class="inside-chart">Adventurer<br>Level:</div><br><input type="number"></td>
-            <td valign="top" width="65%"><div class="inside-chart">XP Earned:</div><input type="text" id="charname" placeholder="XP Earned:"></td>
+            <td valign="top" width="35%" rowspan="2"><div class="inside-chart">Adventurer Level:</div><input type="number" name="attr_Adventurer_Level"></td>
+            <td valign="top" width="65%"><div class="inside-chart">XP Earned:</div><input type="text" name="attr_Experience_Points" placeholder="XP Earned:"></td>
           </tr>
           <tr>
-            <td valign="top"><div class="inside-chart">XP for next level:</div><input type="text" id="charname" placeholder="XP for next level:"></td>
+            <td valign="top"><div class="inside-chart">XP for next level:</div><input type="text" name="attr_Points_Needed_For_Next_Level" placeholder="XP for next level:"></td>
           </tr>
         </tbody>
 </table>
@@ -67,59 +63,59 @@
           </tr>
           <tr>
             <td height="10%" align="center">STR</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_STR_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_STR"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_STR"></td>
+            <td align="center"><input type="number" name="attr_STR_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">END</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_END_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_END"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_END"></td>
+            <td align="center"><input type="number" name="attr_END_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">AGI</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_AGI_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_AGI"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_AGI"></td>
+            <td align="center"><input type="number" name="attr_AGI_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">PRE</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_PRE_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_PRE"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_PRE"></td>
+            <td align="center"><input type="number" name="attr_PRE_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">INT</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_INT_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_INT"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_INT"></td>
+            <td align="center"><input type="number" name="attr_INT_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">WIS</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_WIS_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_WIS"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_WIS"></td>
+            <td align="center"><input type="number" name="attr_WIS_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">PER</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_PER_Initial_Score"></td>
+            <td align="center"><input type="number" name="attr_Adjustments_to_PER"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_PER"></td>
+            <td align="center"><input type="number" name="attr_PER_Bonus_or_Penalty"></td>
           </tr>
           <tr>
             <td height="10%" align="center">CHA</td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
-            <td align="center"><input type="number"></td>
+            <td align="center"><input type="number" name="attr_CHA"></td>
+            <td align="center"><input type="number" name="attr_CHAadj"></td>
+            <td align="center"><input type="number" name="attr_Adjusted_CHA"></td>
+            <td align="center"><input type="number" name="attr_CHA_Bonus_or_Penalty"></td>
           </tr>
         </tbody>
       </table>
@@ -131,18 +127,18 @@
             <td height="6%" colspan="3"><div class="titles">Characteristics</div></td>
           </tr>
           <tr>
-            <td valign="top" height="14%" colspan="3"><div class="inside-chart">Ancestry:</div><input type="text" id="ancestry" placeholder="Ancestry"></td>
+            <td valign="top" height="14%" colspan="3"><div class="inside-chart">Ancestry:</div><input type="text" name="attr_Ancestry" placeholder="Ancestry"></td>
           </tr>
           <tr>
-            <td valign="top" height="14%"><div class="inside-chart">Sex:</div><input type="text" id="sex" placeholder="Sex"></td>
-            <td valign="top" height="14%"><div class="inside-chart">Height:</div><input type="text" id="height" placeholder="Height"></td>
-            <td valign="top" height="14%"><div class="inside-chart">Weight:</div><input type="text" id="weight" placeholder="Weight"></td>
+            <td valign="top" height="14%"><div class="inside-chart">Sex:</div><input type="text" name="attr_Sex" placeholder="Sex"></td>
+            <td valign="top" height="14%"><div class="inside-chart">Height:</div><input type="text" name="attr_Height" placeholder="Height"></td>
+            <td valign="top" height="14%"><div class="inside-chart">Weight:</div><input type="text" name="attr_Weight" placeholder="Weight"></td>
           </tr>
           <tr>
-            <td valign="top" height="14%" colspan="3"><div class="inside-chart">Age:</div><input type="text" id="age" placeholder="Age"></td>
+            <td valign="top" height="14%" colspan="3"><div class="inside-chart">Age:</div><input type="text" name="attr_Age" placeholder="Age"></td>
           </tr>
           <tr>
-            <td valign="top" height="30%" colspan="3"><div class="inside-chart">Distinguishing Features:</div><textarea name="message" rows="17" cols="auto" placeholder="Note your character's distinguishing features here."></textarea></td>
+            <td valign="top" height="30%" colspan="3"><div class="inside-chart">Distinguishing Features:</div><textarea name="attr_Distinguishing_Features" rows="5" placeholder="Note your character's distinguishing features here."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -154,10 +150,10 @@
             <td height="5%"><div class="titles">Origins</div></td>
           </tr>
           <tr>
-            <td valign="top" height="70%"><div class="inside-chart">Background Story:</div><textarea name="message" rows="31" cols="auto" placeholder="Enter your character's background story."></textarea></td>
+            <td valign="top" height="70%"><div class="inside-chart">Background Story:</div><textarea name="attr_Background_Story" rows="16" placeholder="Enter your character's background story."></textarea></td>
           </tr>
         <tr>
-            <td valign="top" height="25%"><div class="inside-chart">Languages Spoken:</div><textarea name="message" rows="9" cols="auto" placeholder="Enter languages spoken."></textarea></td>
+            <td valign="top" height="25%"><div class="inside-chart">Languages Spoken:</div><textarea name="attr_Spoken_Languages" rows="4" placeholder="Enter languages spoken."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -169,19 +165,19 @@
             <td><div class="titles">Profile</div></td>
           </tr>
           <tr>
-            <td valign="top" height="12%"><div class="inside-chart">Aptitude and Expertise:</div><textarea name="message" rows="4" cols="auto" placeholder="Note your character's aptitude and expertise."></textarea></td>
+            <td valign="top" height="12%"><div class="inside-chart">Aptitude and Expertise:</div><textarea name="attr_Aptitude_and_Expertise" rows="" placeholder="Note your character's aptitude and expertise."></textarea></td>
           </tr>
           <tr>
-            <td valign="top" height="40%"><div class="inside-chart">Vocation and Description:</div><textarea name="message" rows="19" cols="auto" placeholder="Describe your character's vocation."></textarea></td>
+            <td valign="top" height="40%"><div class="inside-chart">Vocation and Description:</div><textarea name="attr_Vocation" rows="11" placeholder="Describe your character's vocation."></textarea></td>
           </tr>
           <tr>
-            <td valign="top" height="18%"><div class="inside-chart">Professional Titles or Aliases:</div><textarea name="message" rows="5" cols="auto" placeholder="Any titles your character has earned or will earn can be recorded here."></textarea></td>
+            <td valign="top" height="18%"><div class="inside-chart">Professional Titles or Aliases:</div><textarea name="attr_Professional_Titles" placeholder="Any titles your character has earned or will earn can be recorded here."></textarea></td>
           </tr>
           <tr>
-            <td valign="top" height="18%"><div class="inside-chart">Advantage:</div><textarea name="message" rows="5" cols="auto" placeholder="Note your character's advantage here."></textarea></td>
+            <td valign="top" height="18%"><div class="inside-chart">Advantage:</div><textarea name="attr_Advantage" placeholder="Note your character's advantage here."></textarea></td>
           </tr>
         <tr>
-            <td valign="top" height="12%"><div class="inside-chart">Term:</div><textarea name="message" rows="3" cols="auto" placeholder="Record the number of years your character trained professionally."></textarea></td>
+            <td valign="top" height="12%"><div class="inside-chart">Term:</div><textarea name="attr_Professional_Term" placeholder="Record the number of years your character trained professionally."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -194,27 +190,27 @@
           </tr>
           <tr>
             <td width="75%" height="15%">&nbsp;Assess Threat</td>
-            <td width="25%" height="15%"><input type="number"></td>
+            <td width="25%" height="15%"><input type="number" name="attr_Assess_Threat"></td>
           </tr>
           <tr>
             <td>&nbsp;Collect Information</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Collect_Information"></td>
           </tr>
           <tr>
             <td>&nbsp;Find</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Find"></td>
           </tr>
           <tr>
             <td>&nbsp;Haggle</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Haggle"></td>
           </tr>
         <tr>
             <td>&nbsp;Navigate</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Navigate"></td>
           </tr>
         <tr>
             <td>&nbsp;Take Notice</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Take_Notice"></td>
           </tr>
         </tbody>
       </table>
@@ -227,27 +223,27 @@
           </tr>
           <tr>
             <td width="65%" height="15%">&nbsp;Addiction</td>
-            <td width="35%" height="15%"><input type="number"></td>
+            <td width="35%" height="15%"><input type="number" name="attr_Addiction_Resistance"></td>
           </tr>
           <tr>
             <td>&nbsp;Aversion</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Aversion_Resistance"></td>
           </tr>
           <tr>
             <td>&nbsp;Debility</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Debility_Resistance"></td>
           </tr>
           <tr>
             <td>&nbsp;Explosion</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Explosion_Resistance"></td>
           </tr>
         <tr>
             <td>&nbsp;Infection</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Infection_Resistance"></td>
           </tr>
         <tr>
             <td>&nbsp;Toxin</td>
-            <td><input type="number"></td>
+            <td><input type="number" name="attr_Toxin_Resistance"></td>
           </tr>
         </tbody>
       </table>
@@ -259,35 +255,35 @@
             <td colspan="2"><div class="titles">Skills</div></td>
           </tr>
           <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_1_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_1_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_2_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_2_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_3_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_3_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_4_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_4_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_5_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_5_value"></td>
           </tr>
         <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_6_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_6_value"></td>
           </tr>
         <tr>
-            <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+            <td width="80%" height="10%"><input type="text" name="attr_Skill_7_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_7_value"></td>
           </tr>
-             <td width="80%" height="10%"><input type="text"></td>
-            <td width="20%" height="10%"><input type="number"></td>
+             <td width="80%" height="10%"><input type="text" name="attr_Skill_8_name"></td>
+            <td width="20%" height="10%"><input type="number" name="attr_Skill_8_value"></td>
           </tr>
         </tbody>
       </table>
@@ -299,10 +295,10 @@
             <td height="10%"><div class="titles">Pale Stone Encounter</div></td>
           </tr>
           <tr>
-            <td valign="top" height="60%"><div class="inside-chart">Encounter Story:</div><textarea name="message" rows="22" cols="auto" placeholder="Record your character's encounter story in detail."></textarea></td>
+            <td valign="top" height="60%"><div class="inside-chart">Encounter Story:</div><textarea name="attr_Pals_Stone_Encounter" rows="13" placeholder="Record your character's encounter story in detail."></textarea></td>
           </tr>
         <tr>
-            <td valign="top" height="30%"><div class="inside-chart">Outcome:</div><textarea name="message" rows="9" cols="auto" placeholder="Note the outcome of your character's pale stone encounter."></textarea></td>
+            <td valign="top" height="30%"><div class="inside-chart">Outcome:</div><textarea name="attr_Pale_Stone_Outcome" rows="5" placeholder="Note the outcome of your character's pale stone encounter."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -314,28 +310,28 @@
             <td colspan="2"><div class="titles">Proficiencies</div></td>
           </tr>
           <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_1_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_1_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_2_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_2_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_3_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_3_value"></td>
           </tr>
           <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_4_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_4_value"></td>
           </tr>
         <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_5_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_5_value"></td>
           </tr>
         <tr>
-            <td width="80%" height="14%"><input type="text"></td>
-            <td width="20%" height="14%"><input type="number"></td>
+            <td width="80%" height="14%"><input type="text" name="attr_Proficiency_6_name"></td>
+            <td width="20%" height="14%"><input type="number" name="attr_Proficiency_6_value"></td>
           </tr>
         </tbody>
       </table>
@@ -348,22 +344,22 @@
           </tr>
           <tr>
             <td width="65%" height="15%">&nbsp;Poise</td>
-            <td width="35%" height="15%"><input type="number"></td>
+            <td width="35%" height="15%"><input type="number" name="attr_Conditioning_Poise"></td>
           </tr>
           <tr>
             <td width="65%" height="15%">&nbsp;Avoidance</td>
-            <td width="35%" height="15%"><input type="number"></td>
+            <td width="35%" height="15%"><input type="number" name="attr_Conditioning_Avoidance"></td>
           </tr>
           <tr>
             <td width="65%" height="15%">&nbsp;Capacity</td>
-            <td width="35%" height="15%"><input type="number"></td>
+            <td width="35%" height="15%"><input type="number" name="attr_Conditioning_Capacity"></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </div>
-<div id="page-two">
+<div class="page-two">
   <div class="divider"><img src="https://raw.githubusercontent.com/fractalform/sotps-hireling-generator/master/images/AL-Divider.png" width="90%"></div><br>
   <div class="pagetwocontent">
     <div class="pagetwocontent-item outfit">
@@ -373,12 +369,12 @@
             <td height="10%"><div class="titles">Outfit</div></td>
           </tr>
           <tr>
-            <td valign="top" height="30%"><div class="inside-chart">Armor Type, quality, notes:</div><textarea name="message" rows="5" cols="auto" placeholder="Add details about clothing and armors here."></textarea></td>
+            <td valign="top" height="30%"><div class="inside-chart">Armor Type, quality, notes:</div><textarea name="attr_Outfit_Armor" rows="3" placeholder="Add details about clothing and armors here."></textarea></td>
           </tr>
-            <td valign="top" height="30%"><div class="inside-chart">Weapon Type, quality, notes:</div><textarea name="message" rows="5" cols="auto" placeholder="Add details about weapons or other instruments here."></textarea></td>
+            <td valign="top" height="30%"><div class="inside-chart">Weapon Type, quality, notes:</div><textarea name="attr_Outfit_Weapon" rows="3" placeholder="Add details about weapons or other instruments here."></textarea></td>
           </tr>
         <tr>
-            <td valign="top" height="30%"><div class="inside-chart">Additional items:</div><textarea name="message" rows="5" cols="auto" placeholder="Notes about additionally worn or visible items go here."></textarea></td>
+            <td valign="top" height="30%"><div class="inside-chart">Additional items:</div><textarea name="attr_Outfit_Items" rows="3" placeholder="Notes about additionally worn or visible items go here."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -390,15 +386,15 @@
             <td height="20%" colspan="4"><div class="titles">Readiness</div></td>
           </tr>
           <tr>
-            <td valign="top" height="40%" width="25%"><div class="inside-chart">Wear:</div><input type="number"></td>
-            <td valign="top"><div class="inside-chart">Durability:</div><input type="number"></td>
-            <td valign="top"><div class="inside-chart">Capacity:</div><input type="number"></td>
-            <td valign="top"><div class="inside-chart">Injury:</div><input type="number"></td>
+            <td valign="top" height="40%" width="25%"><div class="inside-chart">Wear:</div><input type="number" name="attr_Wear"></td>
+            <td valign="top"><div class="inside-chart">Durability:</div><input type="number" name="attr_Durability"></td>
+            <td valign="top"><div class="inside-chart">Capacity:</div><input type="number" name="attr_Capacity"></td>
+            <td valign="top"><div class="inside-chart">Injury:</div><input type="number" name="attr_Injury"></td>
           </tr>
           <tr>
-            <td valign="top" height="71"><div class="inside-chart">Poise:</div><input type="text"></td>
-            <td valign="top" colspan="2"><div class="inside-chart">Protection Value:</div><input type="text"></td>
-            <td valign="top"><div class="inside-chart">Avoidance:</div><input type="text"></td>
+            <td valign="top" height="71"><div class="inside-chart">Poise:</div><input type="text" name="attr_Poise"></td>
+            <td valign="top" colspan="2"><div class="inside-chart">Protection Value:</div><input type="text" name="attr_Protection_Value"></td>
+            <td valign="top"><div class="inside-chart">Avoidance:</div><input type="text" name="attr_Avoidance"></td>
           </tr>
         </tbody>
       </table>
@@ -410,7 +406,7 @@
             <td height="10%"><div class="titles">Holdings</div></td>
           </tr>
           <tr>
-            <td valign="top" height="90%"><div class="inside-chart">Cargo, vehicles, mounts, & assets:</div><textarea name="message" rows="19" cols="auto" placeholder="Add details about your character's holdings and possessions here."></textarea></td>
+            <td valign="top" height="90%"><div class="inside-chart">Cargo, vehicles, mounts, & assets:</div><textarea name="attr_Assets_and_Holdings" rows="15" placeholder="Add details about your character's holdings and possessions here."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -422,7 +418,7 @@
             <td height="10%"><div class="titles">Altered States</div></td>
           </tr>
           <tr>
-            <td valign="top" height="90%"><textarea name="message" rows="3" cols="auto" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
+            <td valign="top" height="90%"><textarea name="attr_Altered_States" rows="2" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -434,12 +430,12 @@
             <td height="5%"><div class="titles">Inventory</div></td>
           </tr>
           <tr>
-            <td valign="top" height="55%"><div class="inside-chart">Carried equipment, sundries, & supplies:</div><textarea name="message" rows="30" cols="auto" placeholder="Add details about inventory, including carry weight here."></textarea></td>
+            <td valign="top" height="55%"><div class="inside-chart">Carried equipment, sundries, & supplies:</div><textarea name="attr_Inventory_Items" rows="26" placeholder="Add details about inventory, including carry weight here."></textarea></td>
           </tr>
-            <td valign="top" height="20%"><div class="inside-chart">Quest items:</div><textarea name="message" rows="8" cols="auto" placeholder="Add details about quest items here."></textarea></td>
+            <td valign="top" height="20%"><div class="inside-chart">Quest items:</div><textarea name="attr_Quest_Items" rows="7" placeholder="Add details about quest items here."></textarea></td>
           </tr>
         <tr>
-            <td valign="top" height="10%"><div class="inside-chart">Coins, treasures, and wealth:</div><textarea name="message" rows="5" cols="auto" placeholder="Keep track of coins and treasures here."></textarea></td>
+            <td valign="top" height="10%"><div class="inside-chart">Coins, treasures, and wealth:</div><textarea name="attr_Treasures_and_Money" rows="6" placeholder="Keep track of coins and treasures here."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -451,7 +447,7 @@
             <td height="10%"><div class="titles">Actions</div></td>
           </tr>
           <tr>
-            <td valign="top" height="90%"><div class="inside-chart">Action (Source Attribute) / Training Type / Equipment or Supplies Required / Damage and/or Effect</div><textarea name="message" rows="26" cols="auto" placeholder="List each of the actions your character will regularly use, including the details such as damage or supplies used, as noted in the template example."></textarea></td>
+            <td valign="top" height="90%"><div class="inside-chart">Action (Source Attribute) / Training Type / Equipment or Supplies Required / Damage and/or Effect</div><textarea name="attr_Listed_Actions" rows="24" placeholder="List each of the actions your character will regularly use, including the details such as damage or supplies used, as noted in the template example."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -463,7 +459,7 @@
             <td height="10%"><div class="titles">Mastery</div></td>
           </tr>
           <tr>
-            <td valign="top" height="90%"><div class="inside-chart">Bonuses and additional abilities:</div><textarea name="message" rows="16" cols="auto" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
+            <td valign="top" height="90%"><div class="inside-chart">Bonuses and additional abilities:</div><textarea name="attr_Mastery_Bonuses" rows="13" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
           </tr>
         </tbody>
       </table>
@@ -475,12 +471,12 @@
             <td height="10%"><div class="titles">Status</div></td>
           </tr>
           <tr>
-            <td valign="top" height="90%"><div class="inside-chart">Recognition, notable NPCs, and significant events:</div><textarea name="message" rows="16" cols="auto" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
+            <td valign="top" height="90%"><div class="inside-chart">Recognition, notable NPCs, and significant events:</div><textarea name="attr_Status_and_Recognition" rows="13" placeholder="Make notes here when your character experiences altered states, such as exhaustion or fear."></textarea></td>
           </tr>
         </tbody>
       </table>
       </div>
   </div>
-</div
+</div>
 </body>
 </html>
